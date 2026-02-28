@@ -1,0 +1,934 @@
+{
+    "tengwangGeXu": [
+        {
+            "character": "豫章故郡",
+            "pinyin": "yuzhanggujun",
+            "displayPinyin": "yù zhāng gù jùn",
+            "definition": "这里是汉代的豫章郡城"
+        },
+        {
+            "character": "洪都新府",
+            "pinyin": "hongduxinfu",
+            "displayPinyin": "hóng dū xīn fǔ",
+            "definition": "如今是洪州的都督府"
+        },
+        {
+            "character": "星分翼轸",
+            "pinyin": "xingfenyizhen",
+            "displayPinyin": "xīng fēn yì zhěn",
+            "definition": "天象上属于翼、轸两星的分野"
+        },
+        {
+            "character": "地接衡庐",
+            "pinyin": "dijiehenglu",
+            "displayPinyin": "dì jiē héng lú",
+            "definition": "地理位置连接着衡山和庐山"
+        },
+        {
+            "character": "襟三江而带五湖",
+            "pinyin": "jinsanjiangerdaiwuhu",
+            "displayPinyin": "jīn sān jiāng ér dài wǔ hú",
+            "definition": "以三江为衣襟，以五湖为衣带"
+        },
+        {
+            "character": "控蛮荆而引瓯越",
+            "pinyin": "kongmanjineryinouyue",
+            "displayPinyin": "kòng mán jīng ér yǐn ōu yuè",
+            "definition": "控制着楚地，连接着瓯越"
+        },
+        {
+            "character": "物华天宝",
+            "pinyin": "wuhuatianbao",
+            "displayPinyin": "wù huá tiān bǎo",
+            "definition": "物产珍奇，是上天的宝赐"
+        },
+        {
+            "character": "龙光射牛斗之墟",
+            "pinyin": "longguangsheniudouzhixu",
+            "displayPinyin": "lóng guāng shè niú dǒu zhī xū",
+            "definition": "宝剑的光芒直冲牛、斗二星之间"
+        },
+        {
+            "character": "人杰地灵",
+            "pinyin": "renjiediling",
+            "displayPinyin": "rén jié dì líng",
+            "definition": "人才杰出，山川灵秀"
+        },
+        {
+            "character": "徐孺下陈蕃之榻",
+            "pinyin": "xuruxiachenfanzhita",
+            "displayPinyin": "xú rú xià chén fān zhī tà",
+            "definition": "像陈蕃专为徐孺设下榻一样"
+        },
+        {
+            "character": "雄州雾列",
+            "pinyin": "xiongzhouwulie",
+            "displayPinyin": "xióng zhōu wù liè",
+            "definition": "雄伟的州城像雾一样涌起"
+        },
+        {
+            "character": "俊采星驰",
+            "pinyin": "juncaixingchi",
+            "displayPinyin": "jùn cǎi xīng chí",
+            "definition": "杰出的人才像星星一样奔驰"
+        },
+        {
+            "character": "台隍枕夷夏之交",
+            "pinyin": "taihuangzhenyixiazhijiao",
+            "displayPinyin": "tái huáng zhěn yí xià zhī jiāo",
+            "definition": "城池座落在夷夏交界的要害之地"
+        },
+        {
+            "character": "宾主尽东南之美",
+            "pinyin": "binzhujindongnanzhimei",
+            "displayPinyin": "bīn zhǔ jìn dōng nán zhī měi",
+            "definition": "宾主都是东南地区的人才俊杰"
+        },
+        {
+            "character": "都督阎公之雅望",
+            "pinyin": "duduyangongzhiyawang",
+            "displayPinyin": "dū dū yán gōng zhī yǎ wàng",
+            "definition": "都督阎公有高雅的声望"
+        },
+        {
+            "character": "棨戟遥临",
+            "pinyin": "qijiyaolin",
+            "displayPinyin": "qǐ jǐ yáo lín",
+            "definition": "仪仗威严地从远方到来"
+        },
+        {
+            "character": "宇文新州之懿范",
+            "pinyin": "yuwenxinzhouzhiyifan",
+            "displayPinyin": "yǔ wén xīn zhōu zhī yì fàn",
+            "definition": "宇文州牧的德行范例"
+        },
+        {
+            "character": "襜帷暂驻",
+            "pinyin": "chanweizanzhu",
+            "displayPinyin": "chān wéi zàn zhù",
+            "definition": "暂时停下车驾"
+        },
+        {
+            "character": "十旬休假",
+            "pinyin": "shixunxiujia",
+            "displayPinyin": "shí xún xiū jià",
+            "definition": "正好遇到十日一休的假日"
+        },
+        {
+            "character": "胜友如云",
+            "pinyin": "shengyouruyun",
+            "displayPinyin": "shèng yǒu rú yún",
+            "definition": "好朋友聚集成云"
+        },
+        {
+            "character": "千里逢迎",
+            "pinyin": "qianlifengying",
+            "displayPinyin": "qiān lǐ féng yíng",
+            "definition": "迎接千里而来的客人"
+        },
+        {
+            "character": "高朋满座",
+            "pinyin": "gaopengmanzuo",
+            "displayPinyin": "gāo péng mǎn zuò",
+            "definition": "高贵的宾客坐满了席位"
+        },
+        {
+            "character": "腾蛟起凤",
+            "pinyin": "tengjiaoqifeng",
+            "displayPinyin": "téng jiāo qǐ fèng",
+            "definition": "像蛟龙腾空，凤凰起舞"
+        },
+        {
+            "character": "孟学士之词宗",
+            "pinyin": "mengxueshizhicizong",
+            "displayPinyin": "mèng xué shì zhī cí zōng",
+            "definition": "孟学士是文坛的宗师"
+        },
+        {
+            "character": "紫电青霜",
+            "pinyin": "zidianqingshuang",
+            "displayPinyin": "zǐ diàn qīng shuāng",
+            "definition": "像紫电青霜一样的宝剑"
+        },
+        {
+            "character": "王将军之武库",
+            "pinyin": "wangjiangjunzhiwuku",
+            "displayPinyin": "wáng jiāng jūn zhī wǔ kù",
+            "definition": "王将军的兵器库"
+        },
+        {
+            "character": "家君作宰",
+            "pinyin": "jiajunzuozai",
+            "displayPinyin": "jiā jūn zuò zǎi",
+            "definition": "家父在做县令"
+        },
+        {
+            "character": "路出名区",
+            "pinyin": "luchumingqu",
+            "displayPinyin": "lù chū míng qū",
+            "definition": "路过这个名胜之地"
+        },
+        {
+            "character": "童子何知",
+            "pinyin": "tongzihezhi",
+            "displayPinyin": "tóng zǐ hé zhī",
+            "definition": "我一个小孩子知道什么"
+        },
+        {
+            "character": "躬逢胜饯",
+            "pinyin": "gongfengshengjian",
+            "displayPinyin": "gōng féng shèng jiàn",
+            "definition": "能够亲自参加这样盛大的宴会"
+        },
+        {
+            "character": "时维九月",
+            "pinyin": "shiweijiuyue",
+            "displayPinyin": "shí wéi jiǔ yuè",
+            "definition": "时间是九月"
+        },
+        {
+            "character": "序属三秋",
+            "pinyin": "xushusanqiu",
+            "displayPinyin": "xù shǔ sān qiū",
+            "definition": "季节属于深秋"
+        },
+        {
+            "character": "潦水尽而寒潭清",
+            "pinyin": "laoshuijinerhantanqing",
+            "displayPinyin": "lǎo shuǐ jìn ér hán tán qīng",
+            "definition": "积水消尽，潭水清澈"
+        },
+        {
+            "character": "烟光凝而暮山紫",
+            "pinyin": "yanguangningerbushanzi",
+            "displayPinyin": "yān guāng níng ér mù shān zǐ",
+            "definition": "烟光凝结，暮山呈现紫色"
+        },
+        {
+            "character": "俨骖騑于上路",
+            "pinyin": "yancanfeiyushanglu",
+            "displayPinyin": "yǎn cān fēi yú shàng lù",
+            "definition": "驾着马车在高高的道路上"
+        },
+        {
+            "character": "访风景于崇阿",
+            "pinyin": "fangfengjingyuchonge",
+            "displayPinyin": "fǎng fēng jǐng yú chóng ē",
+            "definition": "到高山深谷中寻访风景"
+        },
+        {
+            "character": "临帝子之长洲",
+            "pinyin": "lindizizhichangzhou",
+            "displayPinyin": "lín dì zǐ zhī cháng zhōu",
+            "definition": "来到滕王阁所在的长洲"
+        },
+        {
+            "character": "得天人之旧馆",
+            "pinyin": "detianrenzhijiuguan",
+            "displayPinyin": "dé tiān rén zhī jiù guǎn",
+            "definition": "找到了当年滕王的旧居"
+        },
+        {
+            "character": "层峦耸翠",
+            "pinyin": "cengluansongcui",
+            "displayPinyin": "céng luán sǒng cuì",
+            "definition": "层层山峦耸立着翠绿"
+        },
+        {
+            "character": "上出重霄",
+            "pinyin": "shangchuchongxiao",
+            "displayPinyin": "shàng chū chóng xiāo",
+            "definition": "向上直冲九霄"
+        },
+        {
+            "character": "飞阁流丹",
+            "pinyin": "feigeliudan",
+            "displayPinyin": "fēi gé liú dān",
+            "definition": "凌空的楼阁流光溢彩"
+        },
+        {
+            "character": "下临无地",
+            "pinyin": "xialinwudi",
+            "displayPinyin": "xià lín wú dì",
+            "definition": "向下看去深不见底"
+        },
+        {
+            "character": "鹤汀凫渚",
+            "pinyin": "hetingfuzhu",
+            "displayPinyin": "hè tīng fú zhǔ",
+            "definition": "鹤和野鸭栖息的小洲"
+        },
+        {
+            "character": "穷岛屿之萦回",
+            "pinyin": "qiongdaoyuzhiyinghui",
+            "displayPinyin": "qióng dǎo yǔ zhī yíng huí",
+            "definition": "极尽岛屿曲折回环的景致"
+        },
+        {
+            "character": "桂殿兰宫",
+            "pinyin": "guidianlangong",
+            "displayPinyin": "guì diàn lán gōng",
+            "definition": "桂木建的殿，兰木造的宫"
+        },
+        {
+            "character": "列冈峦之体势",
+            "pinyin": "liegangluanzhitishi",
+            "displayPinyin": "liè gāng luán zhī tǐ shì",
+            "definition": "排列着山峦的形势"
+        },
+        {
+            "character": "披绣闼",
+            "pinyin": "pixiuta",
+            "displayPinyin": "pī xiù tà",
+            "definition": "推开雕花的门"
+        },
+        {
+            "character": "俯雕甍",
+            "pinyin": "fudiaomeng",
+            "displayPinyin": "fǔ diāo méng",
+            "definition": "俯视雕饰的屋脊"
+        },
+        {
+            "character": "山原旷其盈视",
+            "pinyin": "shanyuankuangqiyingshi",
+            "displayPinyin": "shān yuán kuàng qí yíng shì",
+            "definition": "山原辽阔，尽收眼底"
+        },
+        {
+            "character": "川泽纡其骇瞩",
+            "pinyin": "chuanzeyuqihaizhu",
+            "displayPinyin": "chuān zé yū qí hài zhǔ",
+            "definition": "河流湖泊曲折迂回，令人看了心惊"
+        },
+        {
+            "character": "闾阎扑地",
+            "pinyin": "luyanpudi",
+            "displayPinyin": "lǘ yán pū dì",
+            "definition": "房屋密集地排列在地上"
+        },
+        {
+            "character": "钟鸣鼎食之家",
+            "pinyin": "zhongmingdingshizhijia",
+            "displayPinyin": "zhōng míng dǐng shí zhī jiā",
+            "definition": "都是富贵人家"
+        },
+        {
+            "character": "舸舰迷津",
+            "pinyin": "gejianmijin",
+            "displayPinyin": "gě jiàn mí jīn",
+            "definition": "船只密集，使得渡口难辨"
+        },
+        {
+            "character": "青雀黄龙之舳",
+            "pinyin": "qingquehuanglongzhizhu",
+            "displayPinyin": "qīng què huáng lóng zhī zhú",
+            "definition": "都是青雀黄龙造型的大船"
+        },
+        {
+            "character": "云销雨霁",
+            "pinyin": "yunxiaoyuji",
+            "displayPinyin": "yún xiāo yǔ jì",
+            "definition": "云消雨散"
+        },
+        {
+            "character": "彩彻区明",
+            "pinyin": "caichequming",
+            "displayPinyin": "cǎi chè qū míng",
+            "definition": "阳光普照，天地明朗"
+        },
+        {
+            "character": "落霞与孤鹜齐飞",
+            "pinyin": "luoxiayuguwuqifei",
+            "displayPinyin": "luò xiá yǔ gū wù qí fēi",
+            "definition": "落霞与孤鹜一起飞翔"
+        },
+        {
+            "character": "秋水共长天一色",
+            "pinyin": "qiushuigongchangtianyise",
+            "displayPinyin": "qiū shuǐ gòng cháng tiān yī sè",
+            "definition": "秋水和长天连成一片"
+        },
+        {
+            "character": "渔舟唱晚",
+            "pinyin": "yuzhouchangwan",
+            "displayPinyin": "yú zhōu chàng wǎn",
+            "definition": "渔船归来，歌声在晚风中飘荡"
+        },
+        {
+            "character": "响穷彭蠡之滨",
+            "pinyin": "xiangqiongpenglizhibin",
+            "displayPinyin": "xiǎng qióng péng lǐ zhī bīn",
+            "definition": "声音传遍了鄱阳湖滨"
+        },
+        {
+            "character": "雁阵惊寒",
+            "pinyin": "yanzhenjinghan",
+            "displayPinyin": "yàn zhèn jīng hán",
+            "definition": "雁群受惊感到寒意"
+        },
+        {
+            "character": "声断衡阳之浦",
+            "pinyin": "shengduanhengyangzhipu",
+            "displayPinyin": "shēng duàn héng yáng zhī pǔ",
+            "definition": "叫声消失在衡阳的水边"
+        },
+        {
+            "character": "遥襟甫畅",
+            "pinyin": "yaojinfuchang",
+            "displayPinyin": "yáo jīn fǔ chàng",
+            "definition": "远望的胸怀顿时舒畅"
+        },
+        {
+            "character": "逸兴遄飞",
+            "pinyin": "yixingchuanfei",
+            "displayPinyin": "yì xìng chuán fēi",
+            "definition": "飘逸的兴致飞扬"
+        },
+        {
+            "character": "爽籁发而清风生",
+            "pinyin": "shuanglaifaerqingfengsheng",
+            "displayPinyin": "shuǎng lài fā ér qīng fēng shēng",
+            "definition": "排箫声起，清风徐徐吹来"
+        },
+        {
+            "character": "纤歌凝而白云遏",
+            "pinyin": "xiangeningerbaiyune",
+            "displayPinyin": "xiān gē níng ér bái yún è",
+            "definition": "歌声缭绕，白云为之停驻"
+        },
+        {
+            "character": "睢园绿竹",
+            "pinyin": "suiyuanlvzhu",
+            "displayPinyin": "suī yuán lǜ zhú",
+            "definition": "像睢园中的绿竹一样茂盛"
+        },
+        {
+            "character": "气凌彭泽之樽",
+            "pinyin": "qilingpengzezhizun",
+            "displayPinyin": "qì líng péng zé zhī zūn",
+            "definition": "豪气超过陶渊明的酒兴"
+        },
+        {
+            "character": "邺水朱华",
+            "pinyin": "yeshuizhuhua",
+            "displayPinyin": "yè shuǐ zhū huá",
+            "definition": "像邺水边的荷花一样美丽"
+        },
+        {
+            "character": "光照临川之笔",
+            "pinyin": "guangzhaolinchuanzhibi",
+            "displayPinyin": "guāng zhào lín chuān zhī bǐ",
+            "definition": "文采照耀着谢灵运的诗笔"
+        },
+        {
+            "character": "四美具",
+            "pinyin": "simeiju",
+            "displayPinyin": "sì měi jù",
+            "definition": "良辰、美景、赏心、乐事四者齐备"
+        },
+        {
+            "character": "二难并",
+            "pinyin": "ernanbing",
+            "displayPinyin": "èr nán bìng",
+            "definition": "贤主和嘉宾两种难得的人同时相聚"
+        },
+        {
+            "character": "穷睇眄于中天",
+            "pinyin": "qiongdianmianyuzhongtian",
+            "displayPinyin": "qióng dì miǎn yú zhōng tiān",
+            "definition": "极目远望天空"
+        },
+        {
+            "character": "极娱游于暇日",
+            "pinyin": "jiyuyouyuxiari",
+            "displayPinyin": "jí yú yóu yú xiá rì",
+            "definition": "在闲暇的日子里尽情娱乐游玩"
+        },
+        {
+            "character": "天高地迥",
+            "pinyin": "tiangaodijiong",
+            "displayPinyin": "tiān gāo dì jiǒng",
+            "definition": "天空高远，大地辽阔"
+        },
+        {
+            "character": "觉宇宙之无穷",
+            "pinyin": "jueyuzhouzhiwuqiong",
+            "displayPinyin": "jué yǔ zhòu zhī wú qióng",
+            "definition": "感到宇宙的无穷无尽"
+        },
+        {
+            "character": "兴尽悲来",
+            "pinyin": "xingjinbeilai",
+            "displayPinyin": "xìng jìn bēi lái",
+            "definition": "兴致消尽，悲哀袭来"
+        },
+        {
+            "character": "识盈虚之有数",
+            "pinyin": "shiyingxuzhiyoushu",
+            "displayPinyin": "shí yíng xū zhī yǒu shù",
+            "definition": "认识到兴衰成败自有定数"
+        },
+        {
+            "character": "望长安于日下",
+            "pinyin": "wangchangan yurixia",
+            "displayPinyin": "wàng cháng ān yú rì xià",
+            "definition": "远望京城长安在夕阳之下"
+        },
+        {
+            "character": "目吴会于云间",
+            "pinyin": "muwuhuiyuyunjian",
+            "displayPinyin": "mù wú huì yú yún jiān",
+            "definition": "遥看吴会在云雾之间"
+        },
+        {
+            "character": "地势极而南溟深",
+            "pinyin": "dishijienanmingshen",
+            "displayPinyin": "dì shì jí ér nán míng shēn",
+            "definition": "地势到了尽头，南海深不可测"
+        },
+        {
+            "character": "天柱高而北辰远",
+            "pinyin": "tianzhugaoerbeichenyuan",
+            "displayPinyin": "tiān zhù gāo ér běi chén yuǎn",
+            "definition": "天柱高耸，北极星遥远"
+        },
+        {
+            "character": "关山难越",
+            "pinyin": "guanshannanyue",
+            "displayPinyin": "guān shān nán yuè",
+            "definition": "关隘山岭难以跨越"
+        },
+        {
+            "character": "谁悲失路之人",
+            "pinyin": "sheibeishiluzhiren",
+            "displayPinyin": "shuí bēi shī lù zhī rén",
+            "definition": "谁会同情迷路的人"
+        },
+        {
+            "character": "萍水相逢",
+            "pinyin": "pingshuixiangfeng",
+            "displayPinyin": "píng shuǐ xiāng féng",
+            "definition": "像浮萍随水漂泊，偶然相遇"
+        },
+        {
+            "character": "尽是他乡之客",
+            "pinyin": "jinshitaxiangzhike",
+            "displayPinyin": "jìn shì tā xiāng zhī kè",
+            "definition": "都是异乡的客人"
+        },
+        {
+            "character": "怀帝阍而不见",
+            "pinyin": "huaidihunerbujian",
+            "displayPinyin": "huái dì hūn ér bù jiàn",
+            "definition": "怀念朝廷却不能相见"
+        },
+        {
+            "character": "奉宣室以何年",
+            "pinyin": "fengxuanshiyihenian",
+            "displayPinyin": "fèng xuān shì yǐ hé nián",
+            "definition": "不知何时才能像贾谊那样在宣室被召见"
+        },
+        {
+            "character": "嗟乎",
+            "pinyin": "jiehu",
+            "displayPinyin": "jiē hū",
+            "definition": "唉"
+        },
+        {
+            "character": "时运不齐",
+            "pinyin": "shiyunbuji",
+            "displayPinyin": "shí yùn bù jì",
+            "definition": "时机命运不好"
+        },
+        {
+            "character": "命途多舛",
+            "pinyin": "mingtuduochuan",
+            "displayPinyin": "mìng tú duō chuǎn",
+            "definition": "人生道路充满坎坷"
+        },
+        {
+            "character": "冯唐易老",
+            "pinyin": "fengtangyilao",
+            "displayPinyin": "féng táng yì lǎo",
+            "definition": "冯唐容易老去"
+        },
+        {
+            "character": "李广难封",
+            "pinyin": "liguangnanfeng",
+            "displayPinyin": "lǐ guǎng nán fēng",
+            "definition": "李广难以封侯"
+        },
+        {
+            "character": "屈贾谊于长沙",
+            "pinyin": "qujiayiyuchangsha",
+            "displayPinyin": "qū jiǎ yì yú cháng shā",
+            "definition": "贾谊被贬到长沙"
+        },
+        {
+            "character": "非无圣主",
+            "pinyin": "feiwwushengzhu",
+            "displayPinyin": "fēi wú shèng zhǔ",
+            "definition": "并非没有圣明的君主"
+        },
+        {
+            "character": "窜梁鸿于海曲",
+            "pinyin": "cuanlianghongyuhaiqu",
+            "displayPinyin": "cuàn liáng hóng yú hǎi qǔ",
+            "definition": "梁鸿逃匿到海边"
+        },
+        {
+            "character": "岂乏明时",
+            "pinyin": "qifamingshi",
+            "displayPinyin": "qǐ fá míng shí",
+            "definition": "难道缺乏清明的时代吗"
+        },
+        {
+            "character": "所赖君子见机",
+            "pinyin": "suolaijunzijianji",
+            "displayPinyin": "suǒ lài jūn zǐ jiàn jī",
+            "definition": "所依赖的是君子能够预见事物的苗头"
+        },
+        {
+            "character": "达人知命",
+            "pinyin": "darenzhiming",
+            "displayPinyin": "dá rén zhī mìng",
+            "definition": "通达的人懂得命运"
+        },
+        {
+            "character": "老当益壮",
+            "pinyin": "laodangyizhuang",
+            "displayPinyin": "lǎo dāng yì zhuàng",
+            "definition": "年纪虽老，志气应当更加旺盛"
+        },
+        {
+            "character": "宁移白首之心",
+            "pinyin": "ningyibaishouzhixin",
+            "displayPinyin": "nìng yí bái shǒu zhī xīn",
+            "definition": "怎能在白发时改变志向"
+        },
+        {
+            "character": "穷且益坚",
+            "pinyin": "qiongqiyijian",
+            "displayPinyin": "qióng qiě yì jiān",
+            "definition": "处境越艰难，意志越坚定"
+        },
+        {
+            "character": "不坠青云之志",
+            "pinyin": "buzhuiqingyunzhizhi",
+            "displayPinyin": "bù zhuì qīng yún zhī zhì",
+            "definition": "不抛弃远大崇高的志向"
+        },
+        {
+            "character": "酌贪泉而觉爽",
+            "pinyin": "zhuotanquenerjueshuang",
+            "displayPinyin": "zhuó tān quán ér jué shuǎng",
+            "definition": "喝了贪泉的水仍觉得清爽"
+        },
+        {
+            "character": "处涸辙以犹欢",
+            "pinyin": "chuhezheryouhuan",
+            "displayPinyin": "chǔ hé zhé yǐ yóu huān",
+            "definition": "身处困境仍然乐观"
+        },
+        {
+            "character": "北海虽赊",
+            "pinyin": "beihaisuishe",
+            "displayPinyin": "běi hǎi suī shē",
+            "definition": "北海虽然遥远"
+        },
+        {
+            "character": "扶摇可接",
+            "pinyin": "fuyaokojie",
+            "displayPinyin": "fú yáo kě jiē",
+            "definition": "乘着旋风可以到达"
+        },
+        {
+            "character": "东隅已逝",
+            "pinyin": "dongyuyishi",
+            "displayPinyin": "dōng yú yǐ shì",
+            "definition": "早年的时光虽已逝去"
+        },
+        {
+            "character": "桑榆非晚",
+            "pinyin": "sangyufeiwan",
+            "displayPinyin": "sāng yú fēi wǎn",
+            "definition": "晚年的时光也不算晚"
+        },
+        {
+            "character": "孟尝高洁",
+            "pinyin": "mengchanggaojie",
+            "displayPinyin": "mèng cháng gāo jié",
+            "definition": "孟尝品行高洁"
+        },
+        {
+            "character": "空余报国之情",
+            "pinyin": "kongyubaoguo zhiqing",
+            "displayPinyin": "kòng yú bào guó zhī qíng",
+            "definition": "空怀报效国家的情怀"
+        },
+        {
+            "character": "阮籍猖狂",
+            "pinyin": "ruanjichangkuang",
+            "displayPinyin": "ruǎn jí chāng kuáng",
+            "definition": "阮籍狂放不羁"
+        },
+        {
+            "character": "岂效穷途之哭",
+            "pinyin": "qixiaoqiongtuzhiku",
+            "displayPinyin": "qǐ xiào qióng tú zhī kū",
+            "definition": "怎能学他走到穷途就哭泣"
+        },
+        {
+            "character": "勃",
+            "pinyin": "bo",
+            "displayPinyin": "bó",
+            "definition": "我王勃"
+        },
+        {
+            "character": "三尺微命",
+            "pinyin": "sanchaweiming",
+            "displayPinyin": "sān chǐ wēi mìng",
+            "definition": "身份卑微的小官"
+        },
+        {
+            "character": "一介书生",
+            "pinyin": "yijieshusheng",
+            "displayPinyin": "yī jiè shū shēng",
+            "definition": "一个读书人"
+        },
+        {
+            "character": "无路请缨",
+            "pinyin": "wuluqingying",
+            "displayPinyin": "wú lù qǐng yīng",
+            "definition": "没有门路请求报效国家"
+        },
+        {
+            "character": "等终军之弱冠",
+            "pinyin": "dengzhongjunzhiruoguan",
+            "displayPinyin": "děng zhōng jūn zhī ruò guàn",
+            "definition": "和终军一样是弱冠之年"
+        },
+        {
+            "character": "有怀投笔",
+            "pinyin": "youhuaitoubi",
+            "displayPinyin": "yǒu huái tóu bǐ",
+            "definition": "有投笔从戎的怀抱"
+        },
+        {
+            "character": "慕宗悫之长风",
+            "pinyin": "muzongquezhi changfeng",
+            "displayPinyin": "mù zōng què zhī cháng fēng",
+            "definition": "羡慕宗悫乘长风破万里浪的志向"
+        },
+        {
+            "character": "舍簪笏于百龄",
+            "pinyin": "shezan huyubailing",
+            "displayPinyin": "shě zān hù yú bǎi líng",
+            "definition": "舍弃一生的功名富贵"
+        },
+        {
+            "character": "奉晨昏于万里",
+            "pinyin": "fengchenhunyuwanli",
+            "displayPinyin": "fèng chén hūn yú wàn lǐ",
+            "definition": "到万里之外去侍奉父亲"
+        },
+        {
+            "character": "非谢家之宝树",
+            "pinyin": "feixiejiazhibaoshu",
+            "displayPinyin": "fēi xiè jiā zhī bǎo shù",
+            "definition": "虽然不是谢玄那样的人才"
+        },
+        {
+            "character": "接孟氏之芳邻",
+            "pinyin": "jiemengshizhifanglin",
+            "displayPinyin": "jiē mèng shì zhī fāng lín",
+            "definition": "却遇到像孟母的好邻居一样的贤主"
+        },
+        {
+            "character": "他日趋庭",
+            "pinyin": "tariqu ting",
+            "displayPinyin": "tā rì qū tíng",
+            "definition": "过些日子到父亲面前"
+        },
+        {
+            "character": "叨陪鲤对",
+            "pinyin": "taopeilidui",
+            "displayPinyin": "tāo péi lǐ duì",
+            "definition": "像孔鲤那样接受父亲的教诲"
+        },
+        {
+            "character": "今兹捧袂",
+            "pinyin": "jinzipengmei",
+            "displayPinyin": "jīn zī pěng mèi",
+            "definition": "今天举起衣袖行礼"
+        },
+        {
+            "character": "喜托龙门",
+            "pinyin": "xituolongmen",
+            "displayPinyin": "xǐ tuō lóng mén",
+            "definition": "高兴地登上龙门"
+        },
+        {
+            "character": "杨意不逢",
+            "pinyin": "yangyibufeng",
+            "displayPinyin": "yáng yì bù féng",
+            "definition": "没有遇到杨得意那样的推荐人"
+        },
+        {
+            "character": "抚凌云而自惜",
+            "pinyin": "fulingyunerzixi",
+            "displayPinyin": "fǔ líng yún ér zì xī",
+            "definition": "只能抚摸凌云之赋而自我惋惜"
+        },
+        {
+            "character": "钟期既遇",
+            "pinyin": "zhongqijiyu",
+            "displayPinyin": "zhōng qī jì yù",
+            "definition": "既然遇到了钟子期那样的知音"
+        },
+        {
+            "character": "奏流水以何惭",
+            "pinyin": "zouliushuiyihecan",
+            "displayPinyin": "zòu liú shuǐ yǐ hé cán",
+            "definition": "弹奏流水之曲又有什么惭愧"
+        },
+        {
+            "character": "呜呼",
+            "pinyin": "wuhu",
+            "displayPinyin": "wū hū",
+            "definition": "唉"
+        },
+        {
+            "character": "胜地不常",
+            "pinyin": "shengdibuchang",
+            "displayPinyin": "shèng dì bù cháng",
+            "definition": "名胜之地不能常游"
+        },
+        {
+            "character": "盛筵难再",
+            "pinyin": "shengyannanzai",
+            "displayPinyin": "shèng yán nán zài",
+            "definition": "盛大的宴会难以再遇"
+        },
+        {
+            "character": "兰亭已矣",
+            "pinyin": "lantingyiyi",
+            "displayPinyin": "lán tíng yǐ yǐ",
+            "definition": "兰亭的聚会已成过去"
+        },
+        {
+            "character": "梓泽丘墟",
+            "pinyin": "zizeqiuxu",
+            "displayPinyin": "zǐ zé qiū xū",
+            "definition": "金谷园也变成了废墟"
+        },
+        {
+            "character": "临别赠言",
+            "pinyin": "linbiezengyan",
+            "displayPinyin": "lín bié zèng yán",
+            "definition": "临别时赠给大家几句话"
+        },
+        {
+            "character": "幸承恩于伟饯",
+            "pinyin": "xingchengenyuweijian",
+            "displayPinyin": "xìng chéng ēn yú wěi jiàn",
+            "definition": "有幸在这次盛大的宴会上承蒙恩待"
+        },
+        {
+            "character": "登高作赋",
+            "pinyin": "denggaozuofu",
+            "displayPinyin": "dēng gāo zuò fù",
+            "definition": "登高作赋"
+        },
+        {
+            "character": "是所望于群公",
+            "pinyin": "shisuowangyuqungong",
+            "displayPinyin": "shì suǒ wàng yú qún gōng",
+            "definition": "这是我对各位先生的希望"
+        },
+        {
+            "character": "敢竭鄙怀",
+            "pinyin": "ganjiebihuai",
+            "displayPinyin": "gǎn jié bǐ huái",
+            "definition": "冒昧地尽我微薄的心意"
+        },
+        {
+            "character": "恭疏短引",
+            "pinyin": "gongshuduanyin",
+            "displayPinyin": "gōng shū duǎn yǐn",
+            "definition": "恭敬地写下这篇短序"
+        },
+        {
+            "character": "一言均赋",
+            "pinyin": "yiyanjunfu",
+            "displayPinyin": "yī yán jūn fù",
+            "definition": "每个人都赋诗一首"
+        },
+        {
+            "character": "四韵俱成",
+            "pinyin": "siyunjucheng",
+            "displayPinyin": "sì yùn jù chéng",
+            "definition": "四韵八句的诗都已作成"
+        },
+        {
+            "character": "请洒潘江",
+            "pinyin": "qingsapanjiang",
+            "displayPinyin": "qǐng sǎ pān jiāng",
+            "definition": "请各位施展潘岳那样的文采"
+        },
+        {
+            "character": "各倾陆海云尔",
+            "pinyin": "geqingluhaiyuner",
+            "displayPinyin": "gè qīng lù hǎi yún ěr",
+            "definition": "各自倾泻陆机那样的才学"
+        },
+        {
+            "character": "滕王高阁临江渚",
+            "pinyin": "tengwanggaogelinjiangzhu",
+            "displayPinyin": "téng wáng gāo gé lín jiāng zhǔ",
+            "definition": "滕王阁高高地矗立在江边"
+        },
+        {
+            "character": "佩玉鸣鸾罢歌舞",
+            "pinyin": "peiyumingluanbage wu",
+            "displayPinyin": "pèi yù míng luán bà gē wǔ",
+            "definition": "佩玉鸣响，鸾铃清脆，歌舞已经停止"
+        },
+        {
+            "character": "画栋朝飞南浦云",
+            "pinyin": "huadongzhaofeinanpuyun",
+            "displayPinyin": "huà dòng zhāo fēi nán pǔ yún",
+            "definition": "清晨，画栋间飞来南浦的彩云"
+        },
+        {
+            "character": "珠帘暮卷西山雨",
+            "pinyin": "zhulianmujuanxishanyu",
+            "displayPinyin": "zhū lián mù juǎn xī shān yǔ",
+            "definition": "傍晚，珠帘卷起西山的烟雨"
+        },
+        {
+            "character": "闲云潭影日悠悠",
+            "pinyin": "xianyuntanyingriyouyou",
+            "displayPinyin": "xián yún tán yǐng rì yōu yōu",
+            "definition": "闲云倒映在潭水中，日日悠然自在"
+        },
+        {
+            "character": "物换星移几度秋",
+            "pinyin": "wuhuanxingyijiduqiu",
+            "displayPinyin": "wù huàn xīng yí jǐ dù qiū",
+            "definition": "景物变换，星辰移动，不知过了多少个春秋"
+        },
+        {
+            "character": "阁中帝子今何在",
+            "pinyin": "gezhongdizijinhezai",
+            "displayPinyin": "gé zhōng dì zǐ jīn hé zài",
+            "definition": "阁中的滕王如今在哪里呢"
+        },
+        {
+            "character": "槛外长江空自流",
+            "pinyin": "jianwaichangjiangkongziliu",
+            "displayPinyin": "jiàn wài cháng jiāng kōng zì liú",
+            "definition": "栏杆外的长江水独自奔流不息"
+        }
+    ]
+}
