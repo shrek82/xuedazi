@@ -74,6 +74,10 @@ class GameViewModel: ObservableObject {
     @Published var showTTSDebugger: Bool = false
     @Published var showVirtualKeyboard: Bool = true
     @Published var showCoinDrop: Bool = false
+    
+    // MARK: - Typing Speed Statistics (Forwarded from ScoreManager)
+    @Published var typingSpeedWPM: Double = 0.0
+    @Published var isPausedForTTS: Bool = false
 
     // MARK: - Computed Properties
     var currentWord: WordItem {
@@ -152,6 +156,10 @@ class GameViewModel: ObservableObject {
         scoreManager.$comboCount
             .map { $0 >= GameSettings.shared.fireEffectThreshold }
             .assign(to: &$showFireEffect)
+        
+        // Forward typing speed statistics
+        scoreManager.$typingSpeedWPM.removeDuplicates().assign(to: &$typingSpeedWPM)
+        scoreManager.$isPausedForTTS.removeDuplicates().assign(to: &$isPausedForTTS)
         
         // Handle Game Over
         gameEngine.onGameOver = { [weak self] in

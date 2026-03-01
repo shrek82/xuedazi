@@ -60,6 +60,9 @@ class StandardModeStrategy: GameModeStrategy {
         // Use GameEngine to start game
         gameEngine.startNewGame()
         
+        // 开始新一轮游戏，重置速度统计
+        scoreManager.startNewSession()
+        
         gameEngine.isWrong = false
         gameEngine.showSuccess = false
         
@@ -142,6 +145,7 @@ class StandardModeStrategy: GameModeStrategy {
             if !hasSpokenInitialWord {
                 speakWord()
                 hasSpokenInitialWord = true
+                return
             }
         }
         
@@ -268,7 +272,7 @@ class StandardModeStrategy: GameModeStrategy {
         SoundManager.shared.playCorrectLetter()
         SoundManager.shared.recordInput()  // 记录输入时间，用于智能 TTS 语速调整
         
-        // 增加金币 (确保只有配置大于0时才增加)
+        // 增加金币 (确保只有配置大于 0 时才增加)
         let money = GameSettings.shared.moneyPerLetter
         if money > 0 {
             scoreManager.addMoney(money)
@@ -276,6 +280,9 @@ class StandardModeStrategy: GameModeStrategy {
         
         scoreManager.incrementCombo()
         scoreManager.incrementCorrectLetters()
+        
+        // 记录正确输入的字母（用于速度统计）
+        scoreManager.recordCorrectLetter()
         
         // 触发幸运掉落
         checkLuckyDrop(char: char)
@@ -386,8 +393,8 @@ class StandardModeStrategy: GameModeStrategy {
         
         // 单字模式：刚才已经朗读过该字（作为单字），无需再次朗读
         // 修正逻辑：单字模式下，checkCharCompletion 已经跳过了朗读
-        // 所以这里应该朗读一次，确保“全部拼音输入后，还能听到一次完整的朗读”
-        // 但是，题目要求“单字模式...最多只完整的读2次”（开始一次，输入完一次）
+        // 所以这里应该朗读一次，确保"全部拼音输入后，还能听到一次完整的朗读"
+        // 但是，题目要求"单字模式...最多只完整的读 2 次"（开始一次，输入完一次）
         
         speakWord { [weak self] in
             guard let self = self else { return }
@@ -413,7 +420,7 @@ class StandardModeStrategy: GameModeStrategy {
     func jumpToItem(at index: Int, speak: Bool = true) {
         guard !gameEngine.words.isEmpty else { return }
         
-        // 方案2优化：在跳跃时，立即停止之前的语音，防止堆积
+        // 方案 2 优化：在跳跃时，立即停止之前的语音，防止堆积
         SoundManager.shared.stopSpeaking()
         
         // Save progress for current item before moving
@@ -446,7 +453,7 @@ class StandardModeStrategy: GameModeStrategy {
         }
         SoundManager.shared.preloadTexts(preloadList)
         
-        // 方案1优化：只有在 speak 为 true 时才朗读
+        // 方案 1 优化：只有在 speak 为 true 时才朗读
         if speak {
             speakWord()
         }

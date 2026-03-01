@@ -489,6 +489,9 @@ struct GameTopBar: View {
                         subLabel: "阶段 +\(String(format: "%.2f", settings.milestoneBonusMoney))金币"
                     )
                     
+                    // Typing Speed Display
+                    TypingSpeedView(typingSpeedWPM: viewModel.typingSpeedWPM, isPausedForTTS: viewModel.isPausedForTTS)
+                    
                     // Time Progress (if limited)
                     if settings.gameTimeLimit > 0 {
                         GameProgressBar(

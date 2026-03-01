@@ -71,6 +71,25 @@ class ScoreManager: ObservableObject {
     @Published var floatingRewards: [FloatingReward] = []
     
     // 兼容 GameViewModel
+    
+    // MARK: - Typing Speed Statistics
+    /// 当前轮游戏的输入速度统计（字/分钟）
+    @Published var typingSpeedWPM: Double = 0.0
+    
+    /// 当前轮累计正确输入的字母数（用于速度统计）
+    private var sessionCorrectLetters: Int = 0
+    
+    /// 当前轮游戏开始时间
+    private var sessionStartTime: Date?
+    
+    /// 是否在 TTS 朗读或跳转等待中（此时不计时）
+    @Published var isPausedForTTS: Bool = false
+    
+    /// 上次暂停时间（用于计算暂停时长）
+    private var pauseStartTime: Date?
+    
+    /// 累计暂停时长（秒）
+    private var totalPauseTime: TimeInterval = 0.0
     @Published var showFloatingScore: Bool = false
     @Published var floatingScoreValue: Int = 0
     
@@ -104,6 +123,72 @@ class ScoreManager: ObservableObject {
     
     func resetScore() {
         reset()
+        resetTypingSpeedStats()
+    }
+    
+    // MARK: - Typing Speed Management
+    
+    /// 开始新一轮游戏，重置速度统计
+    func startNewSession() {
+        sessionStartTime = Date()
+        sessionCorrectLetters = 0
+        totalPauseTime = 0.0
+        typingSpeedWPM = 0.0
+        isPausedForTTS = false
+        pauseStartTime = nil
+    }
+    
+    /// 重置速度统计
+    func resetTypingSpeedStats() {
+        sessionStartTime = nil
+        sessionCorrectLetters = 0
+        totalPauseTime = 0.0
+        typingSpeedWPM = 0.0
+        isPausedForTTS = false
+        pauseStartTime = nil
+    }
+    
+    /// 记录正确输入一个字母（用于速度统计）
+    func recordCorrectLetter() {
+        sessionCorrectLetters += 1
+        updateTypingSpeed()
+    }
+    
+    /// 更新输入速度（字/分钟）
+    /// 计算公式：速度 = 正确输入字母数 / 有效输入时间（排除 TTS 暂停时间）
+    func updateTypingSpeed() {
+        guard let startTime = sessionStartTime else {
+            typingSpeedWPM = 0.0
+            return
+        }
+        
+        // 计算从游戏开始到现在的总时间
+        let totalTime = Date().timeIntervalSince(startTime)
+        
+        // 如果当前正在暂停中，需要减去当前暂停已经过去的时长
+        let currentPauseDuration: TimeInterval
+        if isPausedForTTS, let pauseStart = pauseStartTime {
+            currentPauseDuration = Date().timeIntervalSince(pauseStart)
+        } else {
+            currentPauseDuration = 0
+        }
+        
+        // 有效输入时间 = 总时间 - 累计暂停时间 - 当前暂停时长
+        let effectiveTime = totalTime - totalPauseTime - currentPauseDuration
+        
+        // 限制最小有效时间为 0.1 秒，避免除零或速度过大
+        guard effectiveTime >= 0.1 else {
+            typingSpeedWPM = 0.0
+            return
+        }
+        
+        // 计算速度：字母数 / 时间 (分钟)
+        let timeInMinutes = effectiveTime / 60.0
+        if timeInMinutes > 0 {
+            typingSpeedWPM = Double(sessionCorrectLetters) / timeInMinutes
+        } else {
+            typingSpeedWPM = 0.0
+        }
     }
     
     func deductCoins(_ amount: Int) {
