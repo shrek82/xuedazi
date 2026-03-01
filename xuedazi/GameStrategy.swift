@@ -266,6 +266,7 @@ class StandardModeStrategy: GameModeStrategy {
     
     private func handleCorrectInput(char: Character, index: Int) {
         SoundManager.shared.playCorrectLetter()
+        SoundManager.shared.recordInput()  // 记录输入时间，用于智能 TTS 语速调整
         
         // 增加金币 (确保只有配置大于0时才增加)
         let money = GameSettings.shared.moneyPerLetter
