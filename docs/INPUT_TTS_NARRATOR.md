@@ -340,6 +340,40 @@ class SoundManager: NSObject {
 }
 ```
 
+#### 调用入口
+
+在每次正确输入时被调用：
+
+```swift
+// GameStrategy.swift - handleCorrectInput()
+private func handleCorrectInput(char: Character, index: Int) {
+    SoundManager.shared.playCorrectLetter()
+    SoundManager.shared.recordInput()  // 记录输入时间，用于智能 TTS 语速调整
+    // ... 其他逻辑
+}
+```
+
+**完整调用链**：
+
+```
+用户输入 → validateInput() 正确 
+           ↓
+handleCorrectInput() 
+  - playCorrectLetter()      播放音效
+  - recordInput()            ← 记录输入时间
+           ↓
+speakCharacter() 
+  - getSuggestedRateMultiplier() 返回速度倍率
+           ↓
+SoundManager.speak(text, rateMultiplier) 
+```
+
+| 输入间隔 | 速度等级 | TTS 倍率 |
+|----------|----------|----------|
+| < 0.25s | 极快 | 1.5x |
+| < 0.45s | 中速 | 1.2x |
+| ≥ 0.45s | 正常 | 1.0x |
+
 ### 2.5 动态语速调整
 
 系统根据用户输入速度动态调整 TTS 语速：
@@ -376,6 +410,8 @@ class SoundManager {
 
 讯飞 TTS 支持预加载文本，减少等待延迟：
 
+讯飞 TTS 支持预加载文本，减少等待延迟：
+
 ```swift
 func preloadTexts(_ texts: [String]) {
     let useSystemTTS = UserDefaults.standard.value(forKey: "useSystemTTS") as? Bool ?? true
@@ -384,11 +420,11 @@ func preloadTexts(_ texts: [String]) {
     xunFeiTTSService.preload(texts: texts)
 }
 ```
+KS|
 
 ### 2.7 TTS 触发场景
 
 | 场景 | 触发方式 | 描述 |
-|------|----------|------|
 | 题目朗读 | `speakWord()` | 当前单词完整朗读 |
 | 单字朗读 | `speakCharacter()` | 每完成一个汉字时触发 |
 | 旁白配音 | `NarratorManager.trigger()` | 事件驱动的角色配音 |
