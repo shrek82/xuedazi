@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-/// 汉字输入速度统计视图
+/// 汉字输入速度统计进度条
 /// 显示当前轮游戏的实时输入速度（字/分钟）
 /// 速度统计已排除 TTS 朗读和跳转等待时间，仅计算有效输入时间
-struct TypingSpeedView: View {
+/// 风格与其他进度条保持一致（彩色渐变进度条）
+struct TypingSpeedProgressBar: View {
     let typingSpeedWPM: Double
     let isPausedForTTS: Bool
     
@@ -21,12 +22,11 @@ struct TypingSpeedView: View {
                 .font(.system(size: 20, weight: .bold))
                 .foregroundColor(speedColor)
                 .frame(width: 24, height: 24)
-                .symbolEffect(.pulse, options: .repeating, value: isPausedForTTS)
             
             VStack(alignment: .leading, spacing: 6) {
                 // Labels
                 HStack(alignment: .lastTextBaseline, spacing: 8) {
-                    Text(speedText)
+                    Text(speedLabel)
                         .font(.system(size: 16, weight: .heavy, design: .rounded))
                         .foregroundColor(speedColor)
                     
@@ -39,6 +39,23 @@ struct TypingSpeedView: View {
                     
                     Spacer()
                 }
+                
+                // Progress Bar (使用与其他进度条一致的样式)
+                GeometryReader { proxy in
+                    ZStack(alignment: .leading) {
+                        // Track
+                        Capsule()
+                            .fill(Color.black.opacity(0.3))
+                            .frame(height: 8)
+                        
+                        // Fill - 彩色渐变进度条
+                        Capsule()
+                            .fill(LinearGradient(colors: [speedColor, speedColor.opacity(0.7)], startPoint: .leading, endPoint: .trailing))
+                            .frame(width: max(0, min(progressWidth * proxy.size.width, proxy.size.width)), height: 8)
+                            .animation(.spring(response: 0.4, dampingFraction: 0.7), value: typingSpeedWPM)
+                    }
+                }
+                .frame(height: 8)
                 
                 Text("输入速度")
                     .font(.system(size: 13, weight: .medium))
@@ -63,7 +80,7 @@ struct TypingSpeedView: View {
         }
     }
     
-    /// 根据速度返回合适的颜色
+    /// 根据速度返回合适的颜色（与其他进度条颜色一致）
     private var speedColor: Color {
         if typingSpeedWPM < 30 {
             return .orange
@@ -76,41 +93,48 @@ struct TypingSpeedView: View {
         }
     }
     
-    /// 格式化的速度文本
-    private var speedText: String {
+    /// 格式化的速度标签
+    private var speedLabel: String {
         if typingSpeedWPM < 10 {
             return String(format: "%.1f 字/分", typingSpeedWPM)
         } else {
             return String(format: "%.0f 字/分", typingSpeedWPM)
         }
     }
+    
+    /// 进度条宽度比例（0-1）
+    /// 假设最高速度为 150 字/分，超过则保持满进度
+    private var progressWidth: CGFloat {
+        let maxSpeed: Double = 150.0
+        return min(CGFloat(typingSpeedWPM / maxSpeed), 1.0)
+    }
 }
 
 #if DEBUG
-struct TypingSpeedView_Previews: PreviewProvider {
+struct TypingSpeedProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            TypingSpeedView(typingSpeedWPM: 25.5, isPausedForTTS: false)
+            TypingSpeedProgressBar(typingSpeedWPM: 25.5, isPausedForTTS: false)
                 .previewDisplayName("慢速")
                 .padding()
                 .background(Color.themeBgSky50)
             
-            TypingSpeedView(typingSpeedWPM: 55.0, isPausedForTTS: false)
+            TypingSpeedProgressBar(typingSpeedWPM: 55.0, isPausedForTTS: false)
                 .previewDisplayName("中速")
                 .padding()
                 .background(Color.themeBgSky50)
             
-            TypingSpeedView(typingSpeedWPM: 85.0, isPausedForTTS: false)
+            TypingSpeedProgressBar(typingSpeedWPM: 85.0, isPausedForTTS: false)
                 .previewDisplayName("快速")
                 .padding()
                 .background(Color.themeBgSky50)
             
-            TypingSpeedView(typingSpeedWPM: 120.0, isPausedForTTS: false)
+            TypingSpeedProgressBar(typingSpeedWPM: 120.0, isPausedForTTS: false)
                 .previewDisplayName("极速")
                 .padding()
                 .background(Color.themeBgSky50)
             
-            TypingSpeedView(typingSpeedWPM: 60.0, isPausedForTTS: true)
+            TypingSpeedProgressBar(typingSpeedWPM: 60.0, isPausedForTTS: true)
                 .previewDisplayName("TTS 暂停中")
                 .padding()
                 .background(Color.themeBgSky50)
